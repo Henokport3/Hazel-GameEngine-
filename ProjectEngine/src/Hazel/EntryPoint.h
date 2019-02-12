@@ -11,6 +11,10 @@
 	// Entry Point
 	int main(int argc, char** argv)
 	{
+		Hazel::Log::Init();					// Call initializer from log
+		HZ_CORE_WARN("Initialized log!");	// Log from core as a warning
+		HZ_INFO("Welcome!");				// Log from client as a message
+
 		printf("Hazel Game Engine\n");
 		auto app = Hazel::CreateApplication();
 		app->Run();

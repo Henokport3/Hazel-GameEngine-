@@ -8,7 +8,7 @@ public:
 	~Sandbox() {};
 };
 
-
+// Starts application
 Hazel::Application* Hazel::CreateApplication()
 {
 	return new Sandbox();

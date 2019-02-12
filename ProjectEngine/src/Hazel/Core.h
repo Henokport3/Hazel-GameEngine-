@@ -1,5 +1,7 @@
 #pragma once
 
+// Unlike functions which gets called, MACROS can be disable all logs from distribution builds and does not get included in the binary.
+
 // Macros for importing/exporting dynamic libraries (DLL) from symbols
 #ifdef HZ_PLATFORM_WINDOWS							// If running on Windows...
 	#ifdef  HZ_BUILD_DLL							// If building a DLL file...
